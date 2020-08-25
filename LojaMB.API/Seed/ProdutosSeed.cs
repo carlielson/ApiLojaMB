@@ -14,7 +14,6 @@ namespace LojaMB.API.Seed
         public static void Initialize(IServiceProvider service)
         {
             var scope = service.CreateScope();
-            // var context = scope.ServiceProvider.GetRequiredService<ApiContext>();
             using (var context = new ApiContext(scope.ServiceProvider.GetRequiredService<DbContextOptions<ApiContext>>()))
             {
                 if (context.Produtos.Any())
@@ -26,31 +25,66 @@ namespace LojaMB.API.Seed
                     new Produto 
                     {
                         Id = Guid.NewGuid(),
-                        Imagem = "notebook.jpg",
-                        Nome = "Notebook",
-                        Preco = 3000.0
+                        Imagem = "blusafem.jpg",
+                        Nome = "Blusa Feminina",
+                        Preco = 40.0
                     }, 
                     new Produto
                     {
                         Id = Guid.NewGuid(),
-                        Imagem = "tv.jpg",
-                        Nome = "TV 30 POL",
-                        Preco = 3000.0
+                        Imagem = "blusamas.jpg",
+                        Nome = "Blusa Masculina",
+                        Preco = 55.0
                     },
                     new Produto
                     {
                         Id = Guid.NewGuid(),
-                        Imagem = "nitendo.jpg",
-                        Nome = "Nitendo Switch",
-                        Preco = 3000.0
+                        Imagem = "calcaja.jpg",
+                        Nome = "Calça Jeans Azul - Masc.",
+                        Preco = 150.0
                     },
                     new Produto
                     {
                         Id = Guid.NewGuid(),
-                        Imagem = "jbl.jpg",
-                        Nome = "Jbl",
-                        Preco = 1800.0
-                    }
+                        Imagem = "calcajaf.jpg",
+                        Nome = "Calça Jeans Azul - Fem.",
+                        Preco = 180.0
+                    },
+                    new Produto
+                    {
+                        Id = Guid.NewGuid(),
+                        Imagem = "calcajp.jpg",
+                        Nome = "Calça Jeans Preta - Masc.",
+                        Preco = 100.0
+                    },
+                    new Produto
+                    {
+                        Id = Guid.NewGuid(),
+                        Imagem = "calcajpf.jpg",
+                        Nome = "Calça Jeans Preta - Fem.",
+                        Preco = 100.0
+                    },
+                     new Produto
+                     {
+                         Id = Guid.NewGuid(),
+                         Imagem = "cueca.jpg",
+                         Nome = "Cuecas - 3 un.",
+                         Preco = 35.0
+                     },
+                     new Produto
+                     {
+                         Id = Guid.NewGuid(),
+                         Imagem = "shortam.jpg",
+                         Nome = "Short Azul - Masc.",
+                         Preco = 35.0
+                     },
+                     new Produto
+                     {
+                         Id = Guid.NewGuid(),
+                         Imagem = "shortfem.jpg",
+                         Nome = "Short - Fem.",
+                         Preco = 35.0
+                     }
                     );
                 context.SaveChanges();
             }
