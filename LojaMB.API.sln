@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaMB.API", "LojaMB.API\LojaMB.API.csproj", "{F1178BEA-7D49-4C26-8D9E-251E54DC0ED5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1178BEA-7D49-4C26-8D9E-251E54DC0ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1178BEA-7D49-4C26-8D9E-251E54DC0ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1178BEA-7D49-4C26-8D9E-251E54DC0ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1178BEA-7D49-4C26-8D9E-251E54DC0ED5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6F39503-1949-4C3A-9375-2EDCC294C821}
+	EndGlobalSection
+EndGlobal
